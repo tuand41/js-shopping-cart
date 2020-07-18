@@ -133,11 +133,15 @@ li.contact-item{
     height: 160px;
     position: relative;
     margin-bottom: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 ul.slide-breadcrumb{
     position: absolute;
     top: 50%;
+    transition: translateY(-50%);
 }
 
 ul.slide-breadcrumb li{
@@ -226,23 +230,31 @@ li.adult-children-item a{
 
 /* services */
 .section-services{
-    width: 75%;
+    width: calc(74% - 10px);
     float: right;
 }
 
 ul.service-list{
-    margin-left: 20px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 li.service-item{
     box-sizing: border-box;
+    width: 33.33%;
+    margin-top: -10px;
+    position: relative;
 }
 
 a.service-inner{
     /* margin: 6px; */
+    padding: 10px;
+}
+
+.btn-add-cart{
+    display: inline-block;
+    margin: 10px;
 }
 
 a.service-inner h3{
