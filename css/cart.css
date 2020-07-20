@@ -1,0 +1,37 @@
+.cart{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#cart-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #cart-table td, #cart-table th {
+    border: 1px solid #ddd;
+    padding: auto;
+  }
+
+  #cart-table td{
+    vertical-align: middle;
+  }
+  
+  #cart-table tr:hover {background-color: #ddd;}
+  
+  #cart-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .cart-remove-one{
+    margin: 0 auto;
+  }
+
+  .cart-qty{
+    max-width: 30px;
+  }

@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>service</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css/reset-css.css">
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/cart.css">
 
 </head>
 
 <body>
+
     <head class="page-header">
         <div class="hr-custom">
             <div class="container">
@@ -21,7 +23,7 @@
                                 <img class="img-logo" src="images/logo.png" alt="">
                                 <div class="logo-body">
                                     <h2 class="h2">special clinic</h2>
-                                    <p>Physiotherapy -  Rehabilltation</p>
+                                    <p>Physiotherapy - Rehabilltation</p>
                                 </div>
                             </a>
                         </div>
@@ -65,54 +67,25 @@
             </div>
         </section>
         <div class="container row">
-            <aside class="sidebar">
-                <section class="sidebar-adults">
-                    <div class="adult-children-title"><h3 class="uppercase">adults</h3></div>
-                    <ul class="adult-children-list">
-                        <li class="adult-children-item"><a href="">neck-shoulder-hand pain</a></li>
-                        <li class="adult-children-item"><a href="">spinal pain</a></li>
-                        <li class="adult-children-item"><a href="">disk herniation</a></li>
-                        <li class="adult-children-item"><a href="">knee joint, hip joint</a></li>
-                        <li class="adult-children-item"><a href="">footsore</a></li>
-                        <li class="adult-children-item"><a href="">muscle</a></li>
-                    </ul>
-                </section>
-                <section class="sidebar-children">
-                    <div class="adult-children-title"><h3 class="uppercase">children</h3></div>
-
-                    <!-- <ul class="adult-children-list">
-                        <li class="adult-children-item"><a href=""></a></li>
-                    </ul> -->
-                </section>
-                <section class="sidebar-bookschedule">
-                    <div class="book-title"><h1>book schedule</h1></div>
-                    
-                        <form action="" class="book-form" >
-                            <div class="form-group">
-                                <input type="text" name="name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="address">
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" name="phone">
-                            </div>
-                            <div class="form-group">
-                                <input type="time" name="time">
-                            </div>
-                            <div class="form-group">
-                                <button type="submit">send</button>
-                            </div>
-                        </form>
-                    
-                </section>
-            </aside>
-            <section class="section-services">
-                <div class="row">
-                    <ul class="service-list">
-                    </ul>
+            <div class="cart">
+                <table id="cart-table">
+                    <tbody>
+                        <tr>
+                            <th>product</th>
+                            <th>image</th>
+                            <th>price</th>
+                            <th>qty</th>
+                            <th>option</th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="cart-bottom">
+                    <div class="cart-total">total = <span id="total"></span> </div>
+                    <div>
+                        <button id="remove-all">delete all</button>
+                    </div>
                 </div>
-            </section>
+            </div>
         </div>
     </main>
     <footer class="page-footer">
@@ -160,7 +133,7 @@
             </div>
         </section>
     </footer>
-    <script src="js/js.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
