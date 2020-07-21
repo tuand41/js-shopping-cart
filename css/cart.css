@@ -49,3 +49,22 @@ img.cart-img {
 .cart-total {
   margin: auto 0;
 }
+
+@media screen and (max-width: 1203px) and (min-width: 801px){
+
+  .cart {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cart {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  .cart {
+    width: 100%;
+  }
+}

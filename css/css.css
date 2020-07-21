@@ -132,6 +132,7 @@ nav.menu-header {
 
 ul.menu-list {
     display: flex;
+    width: 70%;
 }
 
 li.menu-item {
@@ -145,7 +146,7 @@ li.menu-item a {
     color: #8e8e8e;
     font-family: "Arial";
     text-transform: uppercase;
-    padding: 0 25px;
+    padding: 0 23px;
 }
 
 ul.menu-list li:not(:first-child) {
@@ -155,6 +156,8 @@ ul.menu-list li:not(:first-child) {
 
 ul.menu-contact {
     display: flex;
+    width: 30%;
+    justify-content: flex-end;
 }
 
 li.contact-item {
@@ -284,14 +287,16 @@ li.adult-children-item a {
 }
 
 .form-group button {
-    /* height: 30px; */
+    text-align: center;
     width: 100px;
     display: block;
     margin: 0 auto;
     background-color: #62BD57;
     color: #ffffff;
     border: none;
-    font-size: 1.142rem;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.2em;
     line-height: 30px;
     font-weight: bold;
     font-family: "U TM Avo Bold";
@@ -328,7 +333,7 @@ a.service-inner {
 a.service-inner h3 {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.142rem;
+    font-size: 1em;
     line-height: 2;
 }
 
@@ -337,9 +342,33 @@ a.service-inner p {
     /* color: #282828; */
 }
 
+span.price-service {
+    line-height: 2em;
+    color: #ff6a00;
+    font-size: 1.2em;
+}
+
 img.service-img {
     width: 100%;
     height: auto;
+}
+
+.container-service{
+    width: 90%;
+    margin: 0 auto;
+}
+
+button.btn-add-cart {
+    margin: 6px auto;
+    display: block;
+    background-color: #4CAF50;
+    border: none;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+    outline:none;
 }
 
 /* end main- */
@@ -358,6 +387,19 @@ img.service-img {
 }
 
 .footer-top-content {
+    padding: 30px 0;
+    display: flex;
+}
+
+.footer-about {
+    width: calc(100%/3);
+    /* float: left; */
+}
+
+h2.title {
+    font-size: 1.29em;
+    line-height: 3;
+    color: #ffffff;
     font-weight: bolder;
     font-family: "U TM Avo Bold";
     text-transform: uppercase;
@@ -373,6 +415,7 @@ li.about-us-item {
 }
 
 ul.footer-top-ul li a {
+    color: #ffffff;
     display: block;
 }
 
@@ -426,6 +469,14 @@ span.cp-url {
 /* end footer */
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
+    .contact-content p span{
+        display: none;
+    }
+
+    a#phone{
+        margin-left: 10px;
+    }
+    
     .sidebar {
         width: calc(100% / 3);
     }
@@ -449,6 +500,15 @@ span.cp-url {
     body{
         font-size: 11px;
     }
+
+    a#phone{
+        margin-left: 10px;
+    }
+
+    .contact-content p span{
+        display: none;
+    }
+
     ul.service-list {
         display: grid;
         grid-template-columns: auto auto;
@@ -479,8 +539,16 @@ span.cp-url {
     p.cp-text{
         font-size: 1em;
     }
+
+    .cart{
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 479px) {}
+@media screen and (max-width: 662px) {
+    img.img-logo{
+        width: 50px;
+        height: 50px;
+    }
+}
 
-@media screen and (max-width: 399px) {}
